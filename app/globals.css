@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'NatosanKhmer';
+    src: url('../fonts/NotoSansKhmer-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+li {
+    font-family: 'NatosanKhmer', sans-serif;
+    color: #000;
+    font-size: 18px;
+}
+
+.logo{
+    position: absolute;
+    width: 134px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu-container{
+    position: relative;
+    width: 600px;
+    height: 100%;
+    float: right;
+}
+.menu-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    right: 0;
+}
+.menu-lists{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu-lists li {
+    margin-right: 10px;
+}
+
+.icon_ham{
+    position: absolute;
+    width: 36px;
+    height: auto;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*Home*/
+.carouselContainer {
+    width: 80%;
+    overflow: hidden; /* Hide anything that overflows horizontally */
+    margin: 0 auto; /* Center the carousel */
+  }
+  
+  .carousel {
+    display: flex; /* This will make items align in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth scroll effect */
+  }
+  
+  .carouselItem {
+    min-width: 200px; /* Set a width for each box */
+    height: 200px; /* Set a height for each box */
+    margin-right: 10px; /* Space between the boxes */
+    background-color: #4CAF50; /* Green background for the boxes */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
